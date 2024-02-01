@@ -23,9 +23,13 @@ export class ProjectInput extends Component {
     renderContent() { }
     gatherUserInput() {
         const enteredTitle = this.titleInputElement.value;
+        localStorage.setItem('title', enteredTitle);
         const enteredDescription = this.descriptionInputElement.value;
+        localStorage.setItem('description', enteredDescription);
         const enteredPeople = this.peopleInputElement.value;
+        localStorage.setItem('people', enteredPeople);
         const enteredComment = this.commentInputElement.value;
+        localStorage.setItem('comment', enteredComment);
         const titleValidatable = {
             value: enteredTitle,
             required: true,

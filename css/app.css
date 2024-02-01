@@ -10,6 +10,19 @@ body {
   margin: 0;
 }
 
+header h1 {
+  text-align: center;
+  color: #a2023f;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #a2023f;
+}
+
 label,
 input,
 textarea {
@@ -19,30 +32,35 @@ textarea {
 
 label {
   font-weight: bold;
+  text-align: center;
 }
 
 input,
 textarea {
+  text-align: center;
+  color: #a2023f;
   font: inherit;
-  padding: 0.2rem 0.4rem;
-  width: 100%;
+  padding: 0.4rem;
+  width: 350px;
   max-width: 30rem;
-  border: 1px solid #ccc;
+  border: 0.5px solid #a78f98;
+  border-radius: 5px;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  background: #fff5f9;
+  background: #faf4f6;
 }
 
 button {
   font: inherit;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: #a2023f;
+  border: 1px solid #a2023f;
   cursor: pointer;
   color: white;
   padding: 0.75rem 1rem;
+  border-radius: 10px;
 }
 
 button:focus {
@@ -51,18 +69,21 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #a80041;
-  border-color: #a80041;
+  background: #a43660;
+  border-color: #9a3059;
 }
 
 .projects {
-  margin: 1rem;
-  border: 1px solid #ff0062;
+  margin: 1rem 4rem;
+  border: 1px solid #247b2c;
+  border-radius: 6px;
 }
 
 .projects header {
-  background: #ff0062;
+  background: #39733f;
+  border-radius: 5px 5px 0 0;
   height: 3.5rem;
+  font-size: 0.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +94,7 @@ button:active {
 }
 
 #finished-projects header {
-  background: #0044ff;
+  background: #1e46b4;
 }
 
 .projects h2 {
@@ -85,17 +106,23 @@ button:active {
   list-style: none;
   margin: 0;
   padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects li {
+  text-align: center;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
   margin: 1rem;
   background: white;
+  border-radius: 5px;
 }
 
 .projects li h2 {
-  color: #ff0062;
+  color: #247b2c;
   margin: 0.5rem 0;
 }
 
@@ -104,7 +131,7 @@ button:active {
 }
 
 .projects li h3 {
-  color: #575757;
+  color: #000000;
   font-size: 1rem;
 }
 
@@ -113,7 +140,7 @@ button:active {
 }
 
 .droppable {
-  background: #ffe3ee;
+  background: #a8c1ab;
 }
 
 #finished-projects .droppable {
@@ -121,8 +148,15 @@ button:active {
 }
 
 #user-input {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 0.5rem 4rem;
   padding: 1rem;
-  border: 1px solid #ff0062;
-  background: #f7f7f7;
+  border: 0.5px solid #a2023f;
+  border-radius: 5px;
+  background: #f8e9ef;
+  color: #a2023f;
 }
